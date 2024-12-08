@@ -173,7 +173,7 @@ closeMenu.addEventListener("click", () => {
 new Swiper('.cardWrapper', {
   loop: true,
   spaceBetween: 30,
-
+  
   // pagination bullets
   pagination: {
     el: '.swiper-pagination',

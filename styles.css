@@ -486,6 +486,7 @@ html {
 }
 .newnews .card-list.swiper-wrapper {
   padding-left: 0;
+  direction: ltr !important;
 }
 .newnews .card-list .card-item {
   list-style: none;
