@@ -537,7 +537,7 @@ html {
   align-items: center;
   flex-wrap: wrap;
   background: linear-gradient(rgba(255, 0, 0, 0.6), rgba(255, 0, 0, 0.79)),
-    url("./images/cardredFootebg.jpeg");
+    url("images/cardredFootebg.jpeg");
   background-size: cover;
   background-position: 10%;
   padding: 45px 30px;
