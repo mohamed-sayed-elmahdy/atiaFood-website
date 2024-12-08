@@ -580,6 +580,9 @@ html {
   color: #f44336;
   font-weight: 800;
 }
+.newnews .swiper-pagination {
+  direction: ltr !important;
+}
 .newnews .swiper-pagination-bullet {
   width: 11px;
   height: 11px;
