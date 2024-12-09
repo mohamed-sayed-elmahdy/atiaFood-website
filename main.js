@@ -199,3 +199,65 @@ new Swiper('.cardWrapper', {
     }
   }
 });
+
+// carousel // 
+// get DOM
+let nextDom = document.getElementById('next');
+let prevDom = document.getElementById('prev');
+let carouselDom = document.querySelector('.carousel');
+let SliderDom = carouselDom.querySelector('.carousel .list');
+let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
+let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
+let timeDom = document.querySelector('.carousel .time');
+
+thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+let timeRunning = 3000;
+let timeAutoNext = 7000;
+
+nextDom.onclick = function(){
+    showSlider('next');    
+}
+
+prevDom.onclick = function(){
+    showSlider('prev');    
+}
+let runTimeOut;
+
+function showSlider(type) {
+    let SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
+    let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
+
+    if (type === 'next') {
+        SliderDom.appendChild(SliderItemsDom[0]);
+        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+        carouselDom.classList.add('next');
+    } else {
+        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+        thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
+        carouselDom.classList.add('prev');
+    }
+
+    // Handle video playback
+    let currentItem = SliderDom.querySelector('.item');
+    let video = currentItem.querySelector('video');
+    if (video) {
+        video.play(); // Autoplay video if present
+    }
+
+    // Pause any videos not currently displayed
+    SliderItemsDom.forEach((item) => {
+        let video = item.querySelector('video');
+        if (video && item !== currentItem) {
+            video.pause();
+        }
+    });
+
+    // Reset animation classes
+    clearTimeout(runTimeOut);
+    runTimeOut = setTimeout(() => {
+        carouselDom.classList.remove('next');
+        carouselDom.classList.remove('prev');
+    }, timeRunning);
+
+
+}
