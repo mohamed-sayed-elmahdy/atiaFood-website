@@ -625,25 +625,66 @@ html {
 .about-section .about-content .about-buttons {
   display: flex;
   gap: 10px;
+margin-top: 2rem;
 }
 
-.about-button {
-  padding: 10px 20px;
+.about-section .about-content .about-button {
+  padding: 15px 30px 15px 5px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   background: white;
   color: #000;
-  padding: 15px 30px;
   border: 1px solid #ed1c24;
   font-size: 18px;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.35s all;
+}
+.about-section .about-content .about-button:hover {
+  color: white;
+  background: #ed1c24;
+}
+.about-button i {
+  color: #ed1c24;
+  margin: 0 8px;
+  font-size: 26px;
+}
+.about-section .about-content .about-button:hover i {
+  color: white;
 }
 #about-btn-contact-us,
 #about-btn-learn-more {
 
 }
+.about-section .aboutButton {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 7px;
+  font-size: 16px;
+  margin-top: 2rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.about-section .counter-container {
+  margin-top: 1.5rem;
+}
+.about-section  .counter {
+  font-size: 50px;
+  color: #ed1c24;
+  font-weight: bold;
+  margin-top: 1rem;
+}
 
+.text {
+  font-size: 24px;
+  color: #666;
+  margin-left: 10px;
+}
 /* Services Section */
 .services-section {
   text-align: center;

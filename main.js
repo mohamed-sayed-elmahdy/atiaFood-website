@@ -201,7 +201,7 @@ new Swiper('.cardWrapper', {
 });
 
 // carousel // 
-// get DOM
+// 1- get DOM
 let nextDom = document.getElementById('next');
 let prevDom = document.getElementById('prev');
 let carouselDom = document.querySelector('.carousel');
@@ -261,3 +261,16 @@ function showSlider(type) {
 
 
 }
+// count
+const counterElement = document.getElementById("counter");
+let count = 0;
+
+function updateCounter() {
+  counterElement.textContent = count;
+  count++;
+  if (count > 70) {
+    count = 0; 
+  }
+}
+
+setInterval(updateCounter, 1200); 
