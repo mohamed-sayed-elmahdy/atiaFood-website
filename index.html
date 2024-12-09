@@ -1,313 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Font awesome link-->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!-- Swiperjs CSS link -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <title>Responsive Header</title>
-  </head>
 
-  <body>
-    <header class="header">
-      <div id="contact" class="contact">
-        <div class="phoneNumbersConatiner">
-          <i class="fas fa-phone"></i>
-          <div class="phoneNumbers" style="direction: ltr !important">
-            <a
-              href="tel:+96264886564"
-              class="phone"
-              style="direction: ltr !important"
-            >
-              +962 6 4886564
-            </a>
-            <a
-              href="tel:+96264886560"
-              class="phone"
-              style="direction: ltr !important"
-            >
-              +962 6 4886560
-            </a>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font awesome link-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <!-- Swiperjs CSS link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Responsive Header</title>
+</head>
+
+<body>
+  <header class="header">
+    <div id="contact" class="contact">
+      <div class="phoneNumbersConatiner">
+        <i class="fas fa-phone"></i>
+        <div class="phoneNumbers" style="direction: ltr !important">
+          <a href="tel:+96264886564" class="phone" style="direction: ltr !important">
+            +962 6 4886564
+          </a>
+          <a href="tel:+96264886560" class="phone" style="direction: ltr !important">
+            +962 6 4886560
+          </a>
         </div>
-        <a href="mailto:info@atiehfood.com" class="email">
-          <i class="fas fa-envelope"></i> <span>info@atiehfood.com</span>
+      </div>
+      <a href="mailto:info@atiehfood.com" class="email">
+        <i class="fas fa-envelope"></i> <span>info@atiehfood.com</span>
+      </a>
+    </div>
+    <div class="controls">
+      <div class="language-switch">
+        <i class="fa-solid fa-earth-americas"></i>
+        <label for="language" id="language-label">Language</label>
+        <div class="custom-select">
+          <i class="fa-solid fa-chevron-down"></i>
+          <select id="language">
+            <option value="en">English</option>
+            <option value="ar">عربي</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="social">
+        <span id="follow-text">Follow us:</span>
+        <a href="#" class="social-icon">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" class="social-icon">
+          <i class="fab fa-instagram"></i>
         </a>
       </div>
-      <div class="controls">
-        <div class="language-switch">
-          <i class="fa-solid fa-earth-americas"></i>
-          <label for="language" id="language-label">Language</label>
-          <div class="custom-select">
-            <i class="fa-solid fa-chevron-down"></i>
-            <select id="language">
-              <option value="en">English</option>
-              <option value="ar">عربي</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="social">
-          <span id="follow-text">Follow us:</span>
-          <a href="#" class="social-icon">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="#" class="social-icon">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
-      </div>
-    </header>
-    <div class="navbar-container">
-      <!-- Left Section: Logos -->
-      <a class="logo-section" href="/">
-        <img src="images/logo.png" alt="Arab Sino Logo" class="logo" />
-      </a>
-
-      <!-- Center Section: Links -->
-      <nav class="nav-links">
-        <ul class="linksList" id="nav-links">
-          <div class="contactButtonAndSearch">
-            <a href="#"><button id="contact-btn">Contact Us</button></a>
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <button class="close-menu" id="close-menu">
-            <i class="fas fa-times"></i>
-          </button>
-          <li><a href="#" id="home-link">Home</a></li>
-          <li><a href="#" id="about-link">About Us</a></li>
-          <li><a href="#" id="team-link">Our Team</a></li>
-          <li><a href="#" id="partners-link">Partners</a></li>
-          <li><a href="#" id="brands-link">Brands</a></li>
-        </ul>
-      </nav>
-
-      <!-- Right Section -->
-      <div class="Right-Section">
-        <a href="#"><button id="ContactBtnRight">Contact Us</button></a>
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-
-      <!-- Mobile Menu Toggle -->
-      <button class="menu-toggle" id="menu-toggle">☰</button>
     </div>
-    <!-- Services Section -->
-    <section class="services-section">
-      <h2 id="services-title">
-        OUR SERVICES
-        <img src="images/Group.png" alt="" class="services-title-icon" />
-      </h2>
-      <p id="services-description">
-        We are the largest wholesale food trading and delivery network in Jordan
-      </p>
-      <div class="services-container">
-        <div class="service-card">
-          <div class="imagConatiner">
-            <img
-              src="images/card1.png"
-              alt="Brands Icon"
-              class="service-icon"
-            />
-          </div>
-          <div class="cardContent">
-            <h3 id="brands-title">Brands</h3>
-            <p id="brands-description">
-              As known, the volume of sales in the Jordanian market is
-              distributed as follows:
-            </p>
-            <a href="#" id="brand-link">Read more</a>
-          </div>
-        </div>
-        <div class="service-card">
-          <div class="imagConatiner">
-            <img
-              src="images/card2.png"
-              alt="Distribution Icon"
-              class="service-icon"
-            />
-          </div>
-          <div class="cardContent">
-            <h3 id="distribution-title">Distribution</h3>
-            <p id="distribution-description">
-              We are the largest wholesale food trading and delivery network in
-              Jordan
-            </p>
-            <a href="#" id="distribution-link">Read more</a>
-          </div>
-        </div>
-        <div class="service-card">
-          <div class="imagConatiner">
-            <img
-              src="images/card3.png"
-              alt="Market Coverage Icon"
-              class="service-icon"
-            />
-          </div>
-          <div class="cardContent">
-            <h3 id="market-title">Market Coverage</h3>
-            <p id="market-description">
-              As known, the volume of sales in the Jordanian market is
-              distributed as follows:
-            </p>
-            <a href="#" id="market-link">Read more</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- News and Events Section-->
-    <section class="newnews">
-      <h2 id="news-title">
-        News and Events
-        <img src="images/Group.png" alt="" class="news-title-icon" />
-      </h2>
-      <p id="news-description">
-        We are the largest wholesale food trading and delivery network in Jordan
-      </p>
-      <div class="container swiper">
-        <img src="images/newbg1.png" class="newBg1" alt="bg" />
-        <div class="cardWrapper">
-          <ul class="card-list swiper-wrapper">
-            <li class="card-item swiper-slide">
-              <div class="card-link">
-                <img
-                  src="images/newsCard1.jpeg"
-                  alt="card image"
-                  class="card-image"
-                />
-                <div class="text-Container">
-                  <p class="date" id="date-1">
-                    <i class="fa-regular fa-calendar"></i>January 02, 2022
-                  </p>
-                  <h2 class="badge Events">Events</h2>
-                  <p class="desc">
-                    We are the largest wholesale food trading and delivery
-                    network in Jordan
-                  </p>
-                  <button href="#">Read More</button>
-                </div>
-              </div>
-            </li>
-            <li class="card-item swiper-slide">
-              <div class="card-link">
-                <img
-                  src="images/newsCard1.jpeg"
-                  alt="card image"
-                  class="card-image"
-                />
-                <div class="text-Container">
-                  <p class="date" id="date-1">
-                    <i class="fa-regular fa-calendar"></i>January 02, 2022
-                  </p>
-                  <h2 class="badge Events">Events</h2>
-                  <p class="desc">
-                    We are the largest wholesale food trading and delivery
-                    network in Jordan
-                  </p>
-                  <button href="#">Read More</button>
-                </div>
-              </div>
-            </li>
-            <li class="card-item swiper-slide">
-              <div class="card-link">
-                <img
-                  src="images/newsCard1.jpeg"
-                  alt="card image"
-                  class="card-image"
-                />
-                <div class="text-Container">
-                  <p class="date" id="date-1">
-                    <i class="fa-regular fa-calendar"></i>January 02, 2022
-                  </p>
-                  <h2 class="badge Events">Events</h2>
-                  <p class="desc">
-                    We are the largest wholesale food trading and delivery
-                    network in Jordan
-                  </p>
-                  <button href="#">Read More</button>
-                </div>
-              </div>
-            </li>
-            <li class="card-item swiper-slide">
-              <div class="card-link">
-                <img
-                  src="images/newsCard1.jpeg"
-                  alt="card image"
-                  class="card-image"
-                />
-                <div class="text-Container">
-                  <p class="date" id="date-1">
-                    <i class="fa-regular fa-calendar"></i>January 02, 2022
-                  </p>
-                  <h2 class="badge Events">Events</h2>
-                  <p class="desc">
-                    We are the largest wholesale food trading and delivery
-                    network in Jordan
-                  </p>
-                  <button href="#">Read More</button>
-                </div>
-              </div>
-            </li>
-            <li class="card-item swiper-slide">
-              <div class="card-link">
-                <img
-                  src="images/newsCard1.jpeg"
-                  alt="card image"
-                  class="card-image"
-                />
-                <div class="text-Container">
-                  <p class="date" id="date-1">
-                    <i class="fa-regular fa-calendar"></i>January 02, 2022
-                  </p>
-                  <h2 class="badge Events">Events</h2>
-                  <p class="desc">
-                    We are the largest wholesale food trading and delivery
-                    network in Jordan
-                  </p>
-                  <button href="#">Read More</button>
-                </div>
-              </div>
-            </li>
-            <li class="card-item swiper-slide">
-              <div class="card-link">
-                <img
-                  src="images/newsCard1.jpeg"
-                  alt="card image"
-                  class="card-image"
-                />
-                <div class="text-Container">
-                  <p class="date" id="date-1">
-                    <i class="fa-regular fa-calendar"></i>January 02, 2022
-                  </p>
-                  <h2 class="badge Events">Events</h2>
-                  <p class="desc">
-                    We are the largest wholesale food trading and delivery
-                    network in Jordan
-                  </p>
-                  <button href="#">Read More</button>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-        <img src="images/newbg1.png" class="newBg2" alt="bg" />
-      </div>
-      <button class="newsButton">Read More</button>
-    </section>
+  </header>
+  <div class="navbar-container">
+    <!-- Left Section: Logos -->
+    <a class="logo-section" href="/">
+      <img src="images/logo.png" alt="Arab Sino Logo" class="logo" />
+    </a>
 
-    <footer class="footer-section">
-      <div class="footer-top">
+    <!-- Center Section: Links -->
+    <nav class="nav-links">
+      <ul class="linksList" id="nav-links">
+        <div class="contactButtonAndSearch">
+          <a href="#"><button id="contact-btn">Contact Us</button></a>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <button class="close-menu" id="close-menu">
+          <i class="fas fa-times"></i>
+        </button>
+        <li><a href="#" id="home-link">Home</a></li>
+        <li><a href="#" id="about-link">About Us</a></li>
+        <li><a href="#" id="team-link">Our Team</a></li>
+        <li><a href="#" id="partners-link">Partners</a></li>
+        <li><a href="#" id="brands-link">Brands</a></li>
+      </ul>
+    </nav>
+
+    <!-- Right Section -->
+    <div class="Right-Section">
+      <a href="#"><button id="ContactBtnRight">Contact Us</button></a>
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+  </div>
+  <!-- Services Section -->
+  <section class="services-section">
+    <h2 id="services-title">
+      OUR SERVICES
+      <img src="images/Group.png" alt="" class="services-title-icon" />
+    </h2>
+    <p id="services-description">
+      We are the largest wholesale food trading and delivery network in Jordan
+    </p>
+    <div class="services-container">
+      <div class="service-card">
+        <div class="imagConatiner">
+          <img src="images/card1.png" alt="Brands Icon" class="service-icon" />
+        </div>
+        <div class="cardContent">
+          <h3 id="brands-title">Brands</h3>
+          <p id="brands-description">
+            As known, the volume of sales in the Jordanian market is
+            distributed as follows:
+          </p>
+          <a href="#" id="brand-link">Read more</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="imagConatiner">
+          <img src="images/card2.png" alt="Distribution Icon" class="service-icon" />
+        </div>
+        <div class="cardContent">
+          <h3 id="distribution-title">Distribution</h3>
+          <p id="distribution-description">
+            We are the largest wholesale food trading and delivery network in
+            Jordan
+          </p>
+          <a href="#" id="distribution-link">Read more</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="imagConatiner">
+          <img src="images/card3.png" alt="Market Coverage Icon" class="service-icon" />
+        </div>
+        <div class="cardContent">
+          <h3 id="market-title">Market Coverage</h3>
+          <p id="market-description">
+            As known, the volume of sales in the Jordanian market is
+            distributed as follows:
+          </p>
+          <a href="#" id="market-link">Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- News and Events Section-->
+  <section class="newnews">
+    <h2 id="news-title">
+      News and Events
+      <img src="images/Group.png" alt="" class="news-title-icon" />
+    </h2>
+    <p id="news-description">
+      We are the largest wholesale food trading and delivery network in Jordan
+    </p>
+    <div class="container swiper">
+      <img src="images/newbg1.png" class="newBg1" alt="bg" />
+      <div class="cardWrapper">
+        <ul class="card-list swiper-wrapper">
+          <li class="card-item swiper-slide">
+            <div class="card-link">
+              <img src="images/newsCard1.jpeg" alt="card image" class="card-image" />
+              <div class="text-Container">
+                <p class="date" id="date-1">
+                  <i class="fa-regular fa-calendar"></i>January 02, 2022
+                </p>
+                <h2 class="badge Events">Events</h2>
+                <p class="desc">
+                  We are the largest wholesale food trading and delivery
+                  network in Jordan
+                </p>
+                <button href="#">Read More</button>
+              </div>
+            </div>
+          </li>
+          <li class="card-item swiper-slide">
+            <div class="card-link">
+              <img src="images/newsCard1.jpeg" alt="card image" class="card-image" />
+              <div class="text-Container">
+                <p class="date" id="date-1">
+                  <i class="fa-regular fa-calendar"></i>January 02, 2022
+                </p>
+                <h2 class="badge Events">Events</h2>
+                <p class="desc">
+                  We are the largest wholesale food trading and delivery
+                  network in Jordan
+                </p>
+                <button href="#">Read More</button>
+              </div>
+            </div>
+          </li>
+          <li class="card-item swiper-slide">
+            <div class="card-link">
+              <img src="images/newsCard1.jpeg" alt="card image" class="card-image" />
+              <div class="text-Container">
+                <p class="date" id="date-1">
+                  <i class="fa-regular fa-calendar"></i>January 02, 2022
+                </p>
+                <h2 class="badge Events">Events</h2>
+                <p class="desc">
+                  We are the largest wholesale food trading and delivery
+                  network in Jordan
+                </p>
+                <button href="#">Read More</button>
+              </div>
+            </div>
+          </li>
+          <li class="card-item swiper-slide">
+            <div class="card-link">
+              <img src="images/newsCard1.jpeg" alt="card image" class="card-image" />
+              <div class="text-Container">
+                <p class="date" id="date-1">
+                  <i class="fa-regular fa-calendar"></i>January 02, 2022
+                </p>
+                <h2 class="badge Events">Events</h2>
+                <p class="desc">
+                  We are the largest wholesale food trading and delivery
+                  network in Jordan
+                </p>
+                <button href="#">Read More</button>
+              </div>
+            </div>
+          </li>
+          <li class="card-item swiper-slide">
+            <div class="card-link">
+              <img src="images/newsCard1.jpeg" alt="card image" class="card-image" />
+              <div class="text-Container">
+                <p class="date" id="date-1">
+                  <i class="fa-regular fa-calendar"></i>January 02, 2022
+                </p>
+                <h2 class="badge Events">Events</h2>
+                <p class="desc">
+                  We are the largest wholesale food trading and delivery
+                  network in Jordan
+                </p>
+                <button href="#">Read More</button>
+              </div>
+            </div>
+          </li>
+          <li class="card-item swiper-slide">
+            <div class="card-link">
+              <img src="images/newsCard1.jpeg" alt="card image" class="card-image" />
+              <div class="text-Container">
+                <p class="date" id="date-1">
+                  <i class="fa-regular fa-calendar"></i>January 02, 2022
+                </p>
+                <h2 class="badge Events">Events</h2>
+                <p class="desc">
+                  We are the largest wholesale food trading and delivery
+                  network in Jordan
+                </p>
+                <button href="#">Read More</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <img src="images/newbg1.png" class="newBg2" alt="bg" />
+    </div>
+    <button class="newsButton">Read More</button>
+  </section>
+
+  <footer class="footer-section">
+    <div class="footer-top">
+      <div class="info-boxes-container">
         <div class="info-box">
           <div class="icon-container">
             <i class="fas fa-map-marker-alt"></i>
@@ -319,7 +271,7 @@
         </div>
         <div class="info-box">
           <div class="icon-container">
-            <i class="fas fa-map-marker-alt"></i>
+            <i class="fas fa-envelope"></i>
           </div>
           <div>
             <p id="email-label">Send Email</p>
@@ -328,7 +280,7 @@
         </div>
         <div class="info-box">
           <div class="icon-container">
-            <i class="fas fa-map-marker-alt"></i>
+            <i class="fas fa-phone"></i>
           </div>
           <div>
             <p id="phone-label">Call Emergency</p>
@@ -336,50 +288,55 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="footer-bottom">
-        <div class="logo-section">
+    <div class="footer-bottom">
+      <div class="logo-section">
+        <div class="logo-container">
           <img src="images/logo.png" alt="Arab Sino Logo" class="logo" />
-          <p id="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus.
-          </p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fas fa-envelope"></i></a>
-          </div>
         </div>
-        <div class="links">
-          <div class="company-links">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Our Blog</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div class="legal-links">
-            <h4>Legal</h4>
-            <ul>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Cookies</a></li>
-              <li><a href="#">License</a></li>
-            </ul>
-          </div>
+        <p id="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-x"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
-
-      <div class="footer-credits">
-        <p>© 2024 UI, Made by Es.jo</p>
+      <div class="links">
+        <div class="company-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Our Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="legal-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">License</a></li>
+          </ul>
+        </div>
       </div>
-    </footer>
+    </div>
 
-    <script defer src="main.js"></script>
-    <!-- SwiperJs Script Link -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  </body>
+    <div class="footer-credits">
+      <p>© 2024 UI, Made by Es.jo</p>
+    </div>
+  </footer>
+
+  <script defer src="main.js"></script>
+  <!-- SwiperJs Script Link -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
 </html>
