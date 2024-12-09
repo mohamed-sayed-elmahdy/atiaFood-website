@@ -280,6 +280,12 @@ html {
   position: absolute;
   inset: 0 0 0 0;
 }
+.carousel .list .item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
 .carousel .list .item .overlay {
   position: absolute;
   width: 100%;
@@ -380,8 +386,8 @@ html {
 /* arrows */
 .arrows {
   position: absolute;
-  top: 62%;
-  right: 52%;
+  top: 72%;
+  right: 42%;
   z-index: 100;
   width: 300px;
   max-width: 30%;
@@ -538,7 +544,7 @@ html {
 }
 .carousel.next .arrows button,
 .carousel.prev .arrows button {
-  pointer-events: auto;
+  pointer-events: none;
 }
 .carousel.prev .list .item:nth-child(2) .content .author,
 .carousel.prev .list .item:nth-child(2) .content .title,
@@ -1030,6 +1036,27 @@ html {
   .navbar-container .contactButtonAndSearch {
     display: flex;
   }
+  /* carousel */
+  .carousel {
+    height: 95vh;
+  }
+  .carousel .corner-image1,
+  .carousel .corner-image2 {
+    width: 70px;
+  }
+  .carousel .list .item .content {
+    top: 15%;
+  }
+  .carousel .list .item .title {
+    font-size: 2.2rem;
+    line-height: 1.1em;
+  }
+ /* arrows */
+.arrows {
+  top: 60%;
+  right: 12%;
+}
+
 
   /* Services Section */
   .services-section #services-title {
