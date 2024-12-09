@@ -625,7 +625,7 @@ html {
 .about-section .about-content .about-buttons {
   display: flex;
   gap: 10px;
-margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .about-section .about-content .about-button {
@@ -657,7 +657,6 @@ margin-top: 2rem;
 }
 #about-btn-contact-us,
 #about-btn-learn-more {
-
 }
 .about-section .aboutButton {
   background: #f44336;
@@ -673,7 +672,7 @@ margin-top: 2rem;
 .about-section .counter-container {
   margin-top: 1.5rem;
 }
-.about-section  .counter {
+.about-section .counter {
   font-size: 50px;
   color: #ed1c24;
   font-weight: bold;
