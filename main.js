@@ -271,13 +271,13 @@ const videoSectionContent = {
     title: "Explore MHA",
     description:
       "Selection of high-quality items and provision of the highest level of customer service through accessing all market outlets available.",
-    playButton: "▶",
+    
   },
   ar: {
     title: "استكشف MHA",
     description:
       "اختيار العناصر عالية الجودة وتوفير أعلى مستوى من خدمة العملاء من خلال الوصول إلى جميع المنافذ المتاحة.",
-    playButton: "▶",
+
   },
 };
 
@@ -459,8 +459,7 @@ document.getElementById("language").addEventListener("change", (event) => {
     videoSectionContent[selectedLanguage].title;
   document.getElementById("description").textContent =
     videoSectionContent[selectedLanguage].description;
-  document.querySelector("#play-button span").textContent =
-    videoSectionContent[selectedLanguage].playButton;
+
 
   // Experience Section
   for (let i = 1; i <= 4; i++) {
@@ -484,7 +483,7 @@ document.getElementById("language").addEventListener("change", (event) => {
   // Footer Bottom Section
   document.getElementById("descriptionfooter").textContent =
     footerBottomContent[selectedLanguage].descriptionFooter;
-    
+
   // Update Company and Legal Headings
   document.querySelector(".company-links h4").textContent =
     footerBottomContent[selectedLanguage].companyHeading;

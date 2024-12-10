@@ -1455,8 +1455,6 @@ select:hover ~ .select-icon {
     text-align: center;
     padding: 13px 0px;
   }
-  .navbar-container .nav-links .linksList a {
-  }
   .navbar-container .nav-links .linksList.show li:hover {
     background: rgba(202, 202, 202, 0.721);
   }
