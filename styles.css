@@ -1419,26 +1419,38 @@ select:hover ~ .select-icon {
     transform: translate(50%);
     border: 1px solid #000000;
     max-width: 350px;
-    min-width: 220px;
-    gap: 30px;
+    min-width: 200px;
     justify-content: center;
     align-items: center;
-    padding: 35px;
+    padding: 35px 25px;
     border-radius: 25px;
-    z-index: 100;
+    z-index: 300;
+    gap: 0;
   }
   .navbar-container .nav-links .linksList.show {
     display: flex;
     height: 100%;
+    position: fixed;
     top: 0;
     right: 0;
     margin: 0;
     transform: translate(0%);
     border-radius: 0;
     border: none;
-    background: ;
+    /* background: ; */
+  }
+  .navbar-container .nav-links .linksList.show li {
+    width: 100%;
+    border-bottom: 1px solid rgba(84, 84, 84, 0.408);
+    text-align: center;
+    padding: 13px 0px;
+  }
+  .navbar-container .nav-links .linksList.show li:hover {
+    background: rgba(202, 202, 202, 0.721);
+  }
+  .navbar-container .contactButtonAndSearch button {
+margin-top: 10px;
 }
-
   .navbar-container .Right-Section .menu-toggle {
     display: block;
   }
