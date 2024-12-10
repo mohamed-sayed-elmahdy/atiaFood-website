@@ -1,0 +1,17 @@
+/* Rounded and filled ------------------------------------------------------- */
+.theme-filled {
+    border-radius: 50px;
+    /* <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"><path d="M9 17L2.07 5L15.93 5z" fill="#fff"/></svg> */
+    background: #2980b9 url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2222%22%20viewBox%3D%220%200%2018%2022%22%3E%3Cpath%20d%3D%22M9%2017L2.07%205L15.93%205z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E') right 14px center no-repeat;
+    box-shadow: 0px 10px 10px -6px rgba(0,0,0,0.25);
+  }
+  .theme-filled select {
+    padding: 14px 38px 14px 16px;
+    font: 400 16px/1 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    color: #fff; /* Cution this is not recommended on IE9! */
+  }
+  .theme-filled select option {
+    color: #ccc;
+  }
+  

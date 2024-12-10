@@ -45,17 +45,19 @@
       </div>
       <div class="controls">
         <div class="language-switch">
-          <i class="fa-solid fa-earth-americas"></i>
-          <label for="language" id="language-label">Language</label>
+          <label for="language" id="language-label" style="display: none"
+            >Language:</label
+          >
           <div class="custom-select">
-            <i class="fa-solid fa-chevron-down"></i>
             <select id="language">
               <option value="en">English</option>
               <option value="ar">عربي</option>
             </select>
+            <div class="select-icon">
+              <i class="fa-solid fa-earth-americas"></i>
+            </div>
           </div>
         </div>
-
         <div class="social">
           <span id="follow-text">Follow us:</span>
           <a href="#" class="social-icon">
@@ -94,11 +96,22 @@
       <!-- Right Section -->
       <div class="Right-Section">
         <a href="#"><button id="ContactBtnRight">Contact Us</button></a>
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="search-container">
+          <i
+            class="fa-solid fa-magnifying-glass search-icon"
+            id="search-icon"
+          ></i>
+          <input
+            type="text"
+            class="search-input"
+            id="search-input"
+            placeholder="Search..."
+          />
+        </div>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
       </div>
 
       <!-- Mobile Menu Toggle -->
-      <button class="menu-toggle" id="menu-toggle">☰</button>
     </div>
 
     <!-- carousel -->
@@ -232,7 +245,8 @@
           </button>
         </div>
         <div class="counter-container">
-          <span class="counter" id="counter">0</span><span class="text">Years Of Experience</span>
+          <span class="counter" id="counter">0</span
+          ><span class="text">Years Of Experience</span>
         </div>
         <button class="aboutButton">Read More</button>
       </div>
@@ -442,7 +456,60 @@
       </div>
       <button class="newsButton">Read More</button>
     </section>
-
+    <!-- video section -->
+    <section id="video-section">
+      <div id="overlay"></div>
+      <video id="background-video" autoplay loop muted>
+        <source src="images/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div id="content">
+        <h1 id="title">Explore MHA</h1>
+        <p id="description">
+          Selection of high-quality items and provision of the highest level of customer service through accessing all market outlets available.
+        </p>
+        <div id="play-button-container">
+          <div id="play-button">
+            <span>▶</span>
+          </div>
+        </div>
+      
+      </div>
+    </section>
+<!-- experience Section -->
+<section class="experience-section">
+  <div class="experience-container">
+    <div class="experience-card" id="card1">
+      <span class="count" id="count1">0</span>
+      <p>Years Of Experience</p>
+    </div>
+    <div class="experience-card" id="card2">
+      <span class="count" id="count2">0</span>
+      <p>Years Of Experience</p>
+    </div>
+    <div class="experience-card" id="card3">
+      <span class="count" id="count3">0</span>
+      <p>Years Of Experience</p>
+    </div>
+    <div class="experience-card" id="card4">
+      <span class="count" id="count4">0</span>
+      <p>Years Of Experience</p>
+    </div>
+  </div>
+</section>
+    <!-- Partners Section -->
+    <section class="partners-pection">
+      <div class="wrapper">
+        <a href="#" class="item item1"><img src="images/logo1.png" alt="" /></a>
+        <a href="#" class="item item2"><img src="images/logo2.png" alt="" /></a>
+        <a href="#" class="item item3"><img src="images/logo3.png" alt="" /></a>
+        <a href="#" class="item item4"><img src="images/logo4.png" alt="" /></a>
+        <a href="#" class="item item5"><img src="images/logo1.png" alt="" /></a>
+        <a href="#" class="item item6"><img src="images/logo2.png" alt="" /></a>
+        <a href="#" class="item item7"><img src="images/logo3.png" alt="" /></a>
+        <a href="#" class="item item8"><img src="images/logo4.png" alt="" /></a>
+      </div>
+    </section>
     <footer class="footer-section">
       <div class="footer-top">
         <div class="info-boxes-container">

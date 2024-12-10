@@ -7,8 +7,8 @@ const content = {
       ourTeam: "Our Team",
       partners: "Partners",
       brands: "Brands",
-      contactUs: "Contact us",
-      searchPlaceholder: "Search",
+      contactUs: "Contact Us",
+      searchPlaceholder: "Search...",
     },
     contact: `
       <div class="phoneNumbersConatiner">
@@ -53,7 +53,7 @@ const content = {
       partners: "شركاؤنا",
       brands: "العلامات التجارية",
       contactUs: "اتصل بنا",
-      searchPlaceholder: "بحث",
+      searchPlaceholder: "بحث...",
     },
     contact: `
       <div class="phoneNumbersConatiner">
@@ -100,6 +100,7 @@ const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.querySelector(".nav-links ul");
 const closeMenu = document.getElementById("close-menu");
 const contactBtn = document.getElementById("ContactBtnRight")
+const searchInput = document.getElementById('search-input');
 // Services Elements
 const languageSwitcher = document.getElementById("language");
 const titleElement = document.getElementById("services-title");
@@ -138,6 +139,7 @@ document.getElementById("language").addEventListener("change", (event) => {
   followTextElement.textContent = content[selectedLanguage].followText;
   languageLabelElement.textContent = content[selectedLanguage].languageLabel;
   contactBtn.textContent = content[selectedLanguage].navbar.contactUs;
+  searchInput.placeholder = content[selectedLanguage].navbar.searchPlaceholder; 
 
    // Update Services Elements 
    titleElement.textContent = content[selectedLanguage].ServicesTitle;
@@ -157,6 +159,7 @@ document.getElementById("language").addEventListener("change", (event) => {
 
   // Update text direction for Arabic
   document.body.style.direction = selectedLanguage === "ar" ? "rtl" : "ltr";
+  
 });
 
 // Toggle NavLinks
@@ -261,7 +264,7 @@ function showSlider(type) {
 
 
 }
-// count
+// counter
 const counterElement = document.getElementById("counter");
 let count = 0;
 
@@ -274,3 +277,72 @@ function updateCounter() {
 }
 
 setInterval(updateCounter, 1200); 
+
+
+
+// Search Input 
+const searchIcon = document.getElementById('search-icon');
+
+
+searchIcon.addEventListener('click', () => {
+  searchInput.classList.toggle('open');
+  if (searchInput.classList.contains('open')) {
+    searchInput.focus();
+  }
+});
+
+document.addEventListener('click', (e) => {
+  if (!searchIcon.contains(e.target) && !searchInput.contains(e.target)) {
+    searchInput.classList.remove('open');
+  }
+});
+
+
+
+// Function count-up
+function countUp(element, target) {
+  let current = 0;
+  const interval = 220; // Speed of count
+  const step = target / 100; // Calculate increment step
+
+  const timer = setInterval(() => {
+    current += step;
+    if (current >= target) {
+      current = target;
+      clearInterval(timer);
+
+      // Reset the counter and start again
+      setTimeout(() => {
+        countUp(element, target);
+      }, 2000); // Delay before restarting
+    }
+    element.textContent = Math.floor(current) + "+";
+  }, interval);
+}
+
+// Initialize counters
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = [
+    { id: "count1", target: 20 },
+    { id: "count2", target: 20 },
+    { id: "count3", target: 20 },
+    { id: "count4", target: 20 },
+  ];
+
+  counters.forEach((counter) => {
+    const element = document.getElementById(counter.id);
+    countUp(element, counter.target);
+  });
+});
+
+
+
+// Add functionality to play or pause video on button click
+document.getElementById('play-button').addEventListener('click', function () {
+  const video = document.getElementById('background-video');
+  if (video.paused) {
+    video.play();
+  } else {
+    video.pause();
+  }
+});
