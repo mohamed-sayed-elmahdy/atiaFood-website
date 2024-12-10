@@ -200,7 +200,6 @@ select:hover ~ .select-icon {
 }
 .navbar-container .nav-links .linksList .dropdown {
   position: relative;
-
 }
 .navbar-container .nav-links .linksList .dropdown .dropdown-menu {
   display: none;
@@ -1488,7 +1487,6 @@ select:hover ~ .select-icon {
     border-radius: 0;
     border: none;
     background: rgba(255, 255, 255, 0.15);
-    border-radius: 15px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -1504,7 +1502,7 @@ select:hover ~ .select-icon {
     border-radius: 20px;
   }
   .navbar-container .nav-links .linksList.show li:hover {
-      background: rgba(195, 202, 202, 0.109);
+    background: rgba(195, 202, 202, 0.109);
   }
   .navbar-container .contactButtonAndSearch button {
     margin-top: 10px;
@@ -1521,6 +1519,32 @@ select:hover ~ .select-icon {
   .navbar-container .contactButtonAndSearch {
     display: flex;
   }
+  .navbar-container .nav-links .linksList .dropdown .dropdown-menu {
+    transform: none;
+    position: initial;
+    width: 134px;
+    /* height: 0; */
+    margin-top: 0.9rem;
+    margin: 0.3rem auto 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease, opacity 0.2s ease, visibility 0.2s;
+    background: transparent;
+    border: none;
+box-shadow: none;
+  }
+  .navbar-container
+    .nav-links
+    .linksList
+    .dropdown
+    .dropdown:hover
+    .dropdown-menu {
+    /* display: none; Prevents hover behavior on mobile */
+    height: 300px;
+    opacity: 1;
+    /* visibility: visible; */
+    margin-top: 6px;
+  }
+
   /* carousel */
   .carousel {
     height: 70vh;
