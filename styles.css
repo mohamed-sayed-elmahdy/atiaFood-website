@@ -1493,15 +1493,18 @@ select:hover ~ .select-icon {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    justify-content: flex-start;
+    padding-top: 7rem;
   }
   .navbar-container .nav-links .linksList.show li {
     width: 100%;
     border-bottom: 1px solid rgba(84, 84, 84, 0.408);
     text-align: center;
     padding: 13px 0px;
+    border-radius: 20px;
   }
   .navbar-container .nav-links .linksList.show li:hover {
-    background: rgba(202, 202, 202, 0.721);
+      background: rgba(195, 202, 202, 0.109);
   }
   .navbar-container .contactButtonAndSearch button {
     margin-top: 10px;
