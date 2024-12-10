@@ -6,7 +6,6 @@ html {
   margin: 0;
   padding: 0;
   font-family: asul, sans-serif;
- 
 }
 
 /* Header */
@@ -181,7 +180,6 @@ select:hover ~ .select-icon {
   margin: 0 auto;
   height: 70px;
   background: white;
-  
 }
 
 .navbar-container .logo-section {
@@ -199,7 +197,6 @@ select:hover ~ .select-icon {
   display: flex;
   list-style: none;
   gap: 20px;
-  
 }
 .navbar-container .nav-links .linksList a {
   text-decoration: none;
@@ -399,9 +396,11 @@ select:hover ~ .select-icon {
   padding: 5px 15px;
   cursor: pointer;
   margin-top: 3rem;
+  transition: all 0.3s ease;
 }
 .carousel .list .item .buttons button:hover {
-  background-color: #fc3a40;
+  color: #fc3a40;
+  background: white;
 }
 
 /* thumbail */
@@ -1369,8 +1368,8 @@ select:hover ~ .select-icon {
 @media (max-width: 768px) {
   /* Header */
   .header {
-    padding: 10px 5px;
-    row-gap: 10px;
+    padding: 5px 5px;
+    row-gap: 5px;
     column-gap: 10px;
   }
 
@@ -1411,7 +1410,9 @@ select:hover ~ .select-icon {
     display: none;
   }
   /* Navbar */
-
+  .navbar-container {
+    height: 58px;
+  }
   .navbar-container .nav-links .linksList {
     display: none;
     flex-direction: column;
@@ -1430,7 +1431,6 @@ select:hover ~ .select-icon {
     z-index: 300;
     gap: 0;
     transition: 0.3s all;
- 
   }
   .navbar-container .nav-links .linksList.show {
     display: flex;
@@ -1442,12 +1442,12 @@ select:hover ~ .select-icon {
     transform: translate(0%);
     border-radius: 0;
     border: none;
-    background: rgba(255, 255, 255, 0.15); 
+    background: rgba(255, 255, 255, 0.15);
     border-radius: 15px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
-    backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px); 
-    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
   }
   .navbar-container .nav-links .linksList.show li {
     width: 100%;
@@ -1456,7 +1456,6 @@ select:hover ~ .select-icon {
     padding: 13px 0px;
   }
   .navbar-container .nav-links .linksList a {
-   
   }
   .navbar-container .nav-links .linksList.show li:hover {
     background: rgba(202, 202, 202, 0.721);
@@ -1478,25 +1477,60 @@ select:hover ~ .select-icon {
   }
   /* carousel */
   .carousel {
-    height: 95vh;
+    height: 70vh;
   }
   .carousel .corner-image1,
   .carousel .corner-image2 {
-    width: 70px;
+    width: 55px;
   }
   .carousel .list .item .content {
-    top: 15%;
+    top: 10%;
   }
   .carousel .list .item .title {
-    font-size: 2.2rem;
-    line-height: 1.1em;
+    font-size: 1.8rem;
+    line-height: 1em;
+  }
+  .carousel .list .item .des {
+    margin-top: 0.7rem;
+    font-size: 14px;
+  }
+  .carousel .list .item .buttons {
+    margin-top: 0px;
+  }
+  .carousel .list .item .buttons button {
+    padding: 0px 15px;
   }
   /* arrows */
   .arrows {
-    top: 60%;
-    right: 12%;
+    top: 70%;
+    right: 8%;
   }
-
+  /* about-section */
+  .about-section .about-content {
+    padding: 0px;
+  }
+  .about-section .about-content #about-title {
+    font-size: 1.7rem;
+  }
+  .about-section .about-content #about-title img {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    left: 5px;
+  }
+  .about-section .about-content #about-description,
+  .about-section .about-content #about-description2 {
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+  }
+  .about-section .about-content .about-button {
+    padding: 7px 5px;
+    font-size: 16px;
+  }
+  .about-button i {
+    margin: 0 8px;
+    font-size: 18px;
+  }
   /* Services Section */
   .services-section #services-title {
     font-size: 1.9rem;
