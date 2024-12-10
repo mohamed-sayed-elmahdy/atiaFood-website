@@ -1069,7 +1069,7 @@ select:hover ~ .select-icon {
   margin-bottom: 40px;
   max-width: 900px;
 }
-#video-section  #play-button-container {
+#video-section #play-button-container {
   padding: 5px;
   border: 1px solid white;
   border-radius: 50%;
@@ -1419,7 +1419,7 @@ select:hover ~ .select-icon {
     transform: translate(50%);
     border: 1px solid #000000;
     max-width: 350px;
-    min-width: 300px;
+    min-width: 220px;
     gap: 30px;
     justify-content: center;
     align-items: center;
@@ -1427,10 +1427,17 @@ select:hover ~ .select-icon {
     border-radius: 25px;
     z-index: 100;
   }
-
   .navbar-container .nav-links .linksList.show {
     display: flex;
-  }
+    height: 100%;
+    top: 0;
+    right: 0;
+    margin: 0;
+    transform: translate(0%);
+    border-radius: 0;
+    border: none;
+    background: ;
+}
 
   .navbar-container .Right-Section .menu-toggle {
     display: block;

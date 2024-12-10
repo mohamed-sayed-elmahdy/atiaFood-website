@@ -25,16 +25,19 @@ const content = {
     followText: "Follow us:",
     languageLabel: "Language:",
     ServicesTitle: "Our Services",
-    ServicesDescription: "We are the largest wholesale food trading and delivery network in Jordan",
+    ServicesDescription:
+      "We are the largest wholesale food trading and delivery network in Jordan",
     servicesCards: {
       brands: {
         title: "Brands",
-        description: "We are the largest wholesale food trading and delivery network in Jordan",
+        description:
+          "We are the largest wholesale food trading and delivery network in Jordan",
         link: "Read More",
       },
       distribution: {
         title: "Distribution",
-        description: "We are the largest wholesale food trading and delivery network in Jordan",
+        description:
+          "We are the largest wholesale food trading and delivery network in Jordan",
         link: "Read More",
       },
       market: {
@@ -70,16 +73,19 @@ const content = {
     followText: "تابعنا على: ",
     languageLabel: "اللغة:",
     ServicesTitle: "خدماتنا",
-    ServicesDescription: "نحن أكبر شبكة تجارة وتوزيع للمواد الغذائية بالجملة في الأردن",
+    ServicesDescription:
+      "نحن أكبر شبكة تجارة وتوزيع للمواد الغذائية بالجملة في الأردن",
     servicesCards: {
       brands: {
         title: "العلامات التجارية",
-        description: "نحن أكبر شبكة تجارة وتوزيع للمواد الغذائية بالجملة في الأردن",
+        description:
+          "نحن أكبر شبكة تجارة وتوزيع للمواد الغذائية بالجملة في الأردن",
         link: "اقرأ المزيد",
       },
       distribution: {
         title: "التوزيع",
-        description: "نحن أكبر شبكة تجارة وتوزيع للمواد الغذائية بالجملة في الأردن",
+        description:
+          "نحن أكبر شبكة تجارة وتوزيع للمواد الغذائية بالجملة في الأردن",
         link: "اقرأ المزيد",
       },
       market: {
@@ -99,8 +105,8 @@ const languageLabelElement = document.getElementById("language-label");
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.querySelector(".nav-links ul");
 const closeMenu = document.getElementById("close-menu");
-const contactBtn = document.getElementById("ContactBtnRight")
-const searchInput = document.getElementById('search-input');
+const contactBtn = document.getElementById("ContactBtnRight");
+const searchInput = document.getElementById("search-input");
 // Services Elements
 const languageSwitcher = document.getElementById("language");
 const titleElement = document.getElementById("services-title");
@@ -109,12 +115,13 @@ const brandsTitle = document.getElementById("brands-title");
 const brandsDescription = document.getElementById("brands-description");
 const brandsLink = document.getElementById("brand-link");
 const distributionTitle = document.getElementById("distribution-title");
-const distributionDescription = document.getElementById("distribution-description");
+const distributionDescription = document.getElementById(
+  "distribution-description"
+);
 const distributionLink = document.getElementById("distribution-link");
 const marketTitle = document.getElementById("market-title");
 const marketDescription = document.getElementById("market-description");
 const marketLink = document.getElementById("market-link");
-
 
 // Handle language switch
 document.getElementById("language").addEventListener("change", (event) => {
@@ -129,37 +136,43 @@ document.getElementById("language").addEventListener("change", (event) => {
   document.querySelector(".contactButtonAndSearch button").textContent =
     content[selectedLanguage].navbar.contactUs;
 
-  document.querySelector(".fa-magnifying-glass").setAttribute(
-    "title",
-    content[selectedLanguage].navbar.searchPlaceholder
-  );
+  document
+    .querySelector(".fa-magnifying-glass")
+    .setAttribute("title", content[selectedLanguage].navbar.searchPlaceholder);
 
   // Update other content
   contactElement.innerHTML = content[selectedLanguage].contact;
   followTextElement.textContent = content[selectedLanguage].followText;
   languageLabelElement.textContent = content[selectedLanguage].languageLabel;
   contactBtn.textContent = content[selectedLanguage].navbar.contactUs;
-  searchInput.placeholder = content[selectedLanguage].navbar.searchPlaceholder; 
+  searchInput.placeholder = content[selectedLanguage].navbar.searchPlaceholder;
 
-   // Update Services Elements 
-   titleElement.textContent = content[selectedLanguage].ServicesTitle;
-   descriptionElement.textContent = content[selectedLanguage].ServicesDescription;
- 
-   brandsTitle.textContent = content[selectedLanguage].servicesCards.brands.title;
-   brandsDescription.textContent = content[selectedLanguage].servicesCards.brands.description;
-   brandsLink.textContent = content[selectedLanguage].servicesCards.brands.link;
- 
-   distributionTitle.textContent = content[selectedLanguage].servicesCards.distribution.title;
-   distributionDescription.textContent = content[selectedLanguage].servicesCards.distribution.description;
-   distributionLink.textContent = content[selectedLanguage].servicesCards.distribution.link;
- 
-   marketTitle.textContent = content[selectedLanguage].servicesCards.market.title;
-   marketDescription.textContent = content[selectedLanguage].servicesCards.market.description;
-   marketLink.textContent = content[selectedLanguage].servicesCards.market.link;
+  // Update Services Elements
+  titleElement.textContent = content[selectedLanguage].ServicesTitle;
+  descriptionElement.textContent =
+    content[selectedLanguage].ServicesDescription;
+
+  brandsTitle.textContent =
+    content[selectedLanguage].servicesCards.brands.title;
+  brandsDescription.textContent =
+    content[selectedLanguage].servicesCards.brands.description;
+  brandsLink.textContent = content[selectedLanguage].servicesCards.brands.link;
+
+  distributionTitle.textContent =
+    content[selectedLanguage].servicesCards.distribution.title;
+  distributionDescription.textContent =
+    content[selectedLanguage].servicesCards.distribution.description;
+  distributionLink.textContent =
+    content[selectedLanguage].servicesCards.distribution.link;
+
+  marketTitle.textContent =
+    content[selectedLanguage].servicesCards.market.title;
+  marketDescription.textContent =
+    content[selectedLanguage].servicesCards.market.description;
+  marketLink.textContent = content[selectedLanguage].servicesCards.market.link;
 
   // Update text direction for Arabic
   document.body.style.direction = selectedLanguage === "ar" ? "rtl" : "ltr";
-  
 });
 
 // Toggle NavLinks
@@ -172,14 +185,13 @@ closeMenu.addEventListener("click", () => {
   navLinks.classList.remove("show");
 });
 
-
-new Swiper('.cardWrapper', {
+new Swiper(".cardWrapper", {
   loop: true,
   spaceBetween: 30,
-  
+
   // pagination bullets
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
     dynamicBullets: true,
     width: "10px",
@@ -187,82 +199,82 @@ new Swiper('.cardWrapper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     0: {
-      slidesPerView: 1
+      slidesPerView: 1,
     },
     768: {
-      slidesPerView: 2
+      slidesPerView: 2,
     },
     1024: {
-      slidesPerView: 3
-    }
-  }
+      slidesPerView: 3,
+    },
+  },
 });
 
-// carousel // 
+// carousel //
 // 1- get DOM
-let nextDom = document.getElementById('next');
-let prevDom = document.getElementById('prev');
-let carouselDom = document.querySelector('.carousel');
-let SliderDom = carouselDom.querySelector('.carousel .list');
-let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
-let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
-let timeDom = document.querySelector('.carousel .time');
+let nextDom = document.getElementById("next");
+let prevDom = document.getElementById("prev");
+let carouselDom = document.querySelector(".carousel");
+let SliderDom = carouselDom.querySelector(".carousel .list");
+let thumbnailBorderDom = document.querySelector(".carousel .thumbnail");
+let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll(".item");
+let timeDom = document.querySelector(".carousel .time");
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
 let timeRunning = 3000;
 let timeAutoNext = 7000;
 
-nextDom.onclick = function(){
-    showSlider('next');    
-}
+nextDom.onclick = function () {
+  showSlider("next");
+};
 
-prevDom.onclick = function(){
-    showSlider('prev');    
-}
+prevDom.onclick = function () {
+  showSlider("prev");
+};
 let runTimeOut;
 
 function showSlider(type) {
-    let SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
-    let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
+  let SliderItemsDom = SliderDom.querySelectorAll(".carousel .list .item");
+  let thumbnailItemsDom = document.querySelectorAll(
+    ".carousel .thumbnail .item"
+  );
 
-    if (type === 'next') {
-        SliderDom.appendChild(SliderItemsDom[0]);
-        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-        carouselDom.classList.add('next');
-    } else {
-        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
-        thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
-        carouselDom.classList.add('prev');
+  if (type === "next") {
+    SliderDom.appendChild(SliderItemsDom[0]);
+    thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+    carouselDom.classList.add("next");
+  } else {
+    SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+    thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
+    carouselDom.classList.add("prev");
+  }
+
+  // Handle video playback
+  let currentItem = SliderDom.querySelector(".item");
+  let video = currentItem.querySelector("video");
+  if (video) {
+    video.play(); // Autoplay video if present
+  }
+
+  // Pause any videos not currently displayed
+  SliderItemsDom.forEach((item) => {
+    let video = item.querySelector("video");
+    if (video && item !== currentItem) {
+      video.pause();
     }
+  });
 
-    // Handle video playback
-    let currentItem = SliderDom.querySelector('.item');
-    let video = currentItem.querySelector('video');
-    if (video) {
-        video.play(); // Autoplay video if present
-    }
-
-    // Pause any videos not currently displayed
-    SliderItemsDom.forEach((item) => {
-        let video = item.querySelector('video');
-        if (video && item !== currentItem) {
-            video.pause();
-        }
-    });
-
-    // Reset animation classes
-    clearTimeout(runTimeOut);
-    runTimeOut = setTimeout(() => {
-        carouselDom.classList.remove('next');
-        carouselDom.classList.remove('prev');
-    }, timeRunning);
-
-
+  // Reset animation classes
+  clearTimeout(runTimeOut);
+  runTimeOut = setTimeout(() => {
+    carouselDom.classList.remove("next");
+    carouselDom.classList.remove("prev");
+  }, timeRunning);
 }
 // counter
 const counterElement = document.getElementById("counter");
@@ -272,32 +284,27 @@ function updateCounter() {
   counterElement.textContent = count;
   count++;
   if (count > 70) {
-    count = 0; 
+    count = 0;
   }
 }
 
-setInterval(updateCounter, 1200); 
+setInterval(updateCounter, 1200);
 
+// Search Input
+const searchIcon = document.getElementById("search-icon");
 
-
-// Search Input 
-const searchIcon = document.getElementById('search-icon');
-
-
-searchIcon.addEventListener('click', () => {
-  searchInput.classList.toggle('open');
-  if (searchInput.classList.contains('open')) {
+searchIcon.addEventListener("click", () => {
+  searchInput.classList.toggle("open");
+  if (searchInput.classList.contains("open")) {
     searchInput.focus();
   }
 });
 
-document.addEventListener('click', (e) => {
+document.addEventListener("click", (e) => {
   if (!searchIcon.contains(e.target) && !searchInput.contains(e.target)) {
-    searchInput.classList.remove('open');
+    searchInput.classList.remove("open");
   }
 });
-
-
 
 // Function count-up
 function countUp(element, target) {
@@ -335,11 +342,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-
 // Add functionality to play or pause video on button click
-document.getElementById('play-button').addEventListener('click', function () {
-  const video = document.getElementById('background-video');
+document.getElementById("play-button").addEventListener("click", function () {
+  const video = document.getElementById("background-video");
   if (video.paused) {
     video.play();
   } else {
