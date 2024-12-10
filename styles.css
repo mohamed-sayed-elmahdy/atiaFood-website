@@ -1506,9 +1506,7 @@ select:hover ~ .select-icon {
     border-radius: 20px;
     
   }
-  .navbar-container .nav-links .linksList.show li a {
-    color: white;
-  }
+ 
   .navbar-container .nav-links .linksList.show li:hover {
     background: rgba(195, 202, 202, 0.109);
   }
@@ -1531,7 +1529,7 @@ select:hover ~ .select-icon {
     transform: none;
     position: initial;
     width: 134px;
-    color: white;
+  
     margin: 0.1rem auto 0;
     overflow: hidden;
     transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
@@ -1547,9 +1545,9 @@ select:hover ~ .select-icon {
     .dropdown
     .dropdown:hover
     .dropdown-menu {
-      max-height: 300px; /* القيمة النهائية */
-      opacity: 1; /* القيمة النهائية */
-      visibility: visible; /* القيمة النهائية */
+      max-height: 300px; 
+      opacity: 1;
+      visibility: visible; 
       margin-top: 6px;
   }
 
