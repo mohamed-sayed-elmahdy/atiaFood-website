@@ -527,10 +527,18 @@ document.getElementById("language").addEventListener("change", (event) => {
   }
 });
 
-// Toggle NavLinks
-menuToggle.addEventListener("click", () => {
+
+menuToggle.addEventListener("click", (e) => {
+  e.stopPropagation(); 
   navLinks.classList.toggle("show");
 });
+
+document.addEventListener("click", (e) => {
+  if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+    navLinks.classList.remove("show");
+  }
+});
+
 
 // Close Mobile Menu
 closeMenu.addEventListener("click", () => {
