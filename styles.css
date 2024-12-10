@@ -242,6 +242,9 @@ select:hover ~ .select-icon {
 .navbar-container .nav-links .linksList .dropdown:hover .dropdown-menu {
   display: flex;
 }
+.navbar-container .nav-links .linksList .dropdown a {
+  pointer-events: none;
+}
 .navbar-container .nav-links .linksList a {
   text-decoration: none;
   color: #000;
@@ -1493,6 +1496,7 @@ select:hover ~ .select-icon {
     border: 1px solid rgba(255, 255, 255, 0.3);
     justify-content: flex-start;
     padding-top: 7rem;
+    
   }
   .navbar-container .nav-links .linksList.show li {
     width: 100%;
@@ -1500,6 +1504,10 @@ select:hover ~ .select-icon {
     text-align: center;
     padding: 13px 0px;
     border-radius: 20px;
+    
+  }
+  .navbar-container .nav-links .linksList.show li a {
+    color: white;
   }
   .navbar-container .nav-links .linksList.show li:hover {
     background: rgba(195, 202, 202, 0.109);
@@ -1523,14 +1531,15 @@ select:hover ~ .select-icon {
     transform: none;
     position: initial;
     width: 134px;
-    /* height: 0; */
-    margin-top: 0.9rem;
-    margin: 0.3rem auto 0;
+    color: white;
+    margin: 0.1rem auto 0;
     overflow: hidden;
-    transition: max-height 0.2s ease, opacity 0.2s ease, visibility 0.2s;
+    transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
     background: transparent;
     border: none;
-box-shadow: none;
+    box-shadow: none;
+
+
   }
   .navbar-container
     .nav-links
@@ -1538,11 +1547,10 @@ box-shadow: none;
     .dropdown
     .dropdown:hover
     .dropdown-menu {
-    /* display: none; Prevents hover behavior on mobile */
-    height: 300px;
-    opacity: 1;
-    /* visibility: visible; */
-    margin-top: 6px;
+      max-height: 300px; /* القيمة النهائية */
+      opacity: 1; /* القيمة النهائية */
+      visibility: visible; /* القيمة النهائية */
+      margin-top: 6px;
   }
 
   /* carousel */
