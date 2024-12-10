@@ -296,6 +296,44 @@ const experienceSectionContent = {
     card4: "سنوات من الخبرة",
   },
 };
+// Footer Top Content
+const footerTopContent = {
+  en: {
+    addressLabel: "Address",
+    address: "Amman, Jordan",
+    emailLabel: "Send Email",
+    email: "info@defense-me.com",
+    phoneLabel: "Call Emergency",
+    phone: "+962 6 5526 227",
+  },
+  ar: {
+    addressLabel: "العنوان",
+    address: "عمان، الأردن",
+    emailLabel: "إرسال بريد إلكتروني",
+    email: "info@defense-me.com",
+    phoneLabel: "اتصل بالطوارئ",
+    phone: "+962 6 5526 227",
+  },
+};
+// Footer Bottom Content
+const footerBottomContent = {
+  en: {
+    descriptionFooter:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+      companyHeading: "Company",
+      legalHeading: "Legal",
+      companyLinks: ["About Us", "Services", "Our Blog", "Contact"],
+    legalLinks: ["Terms", "Privacy", "Cookies", "License"],
+  },
+  ar: {
+    descriptionFooter:
+      "هذا نص افتراضي، يُستخدم لعرض النصوص في التصاميم للتوضيح فقط.",
+      companyHeading: "الشركة",
+      legalHeading: "القانوني",
+    companyLinks: ["من نحن", "الخدمات", "مدونتنا", "تواصل معنا"],
+    legalLinks: ["الشروط", "الخصوصية", "الكوكيز", "الرخصة"],
+  },
+};
 
 // Header And Navbar elements
 const contactElement = document.getElementById("contact");
@@ -429,6 +467,41 @@ document.getElementById("language").addEventListener("change", (event) => {
     document.getElementById(`card${i}`).querySelector("p").textContent =
       experienceSectionContent[selectedLanguage][`card${i}`];
   }
+  // Footer Top Section
+  document.getElementById("address-label").textContent =
+    footerTopContent[selectedLanguage].addressLabel;
+  document.getElementById("address").textContent =
+    footerTopContent[selectedLanguage].address;
+  document.getElementById("email-label").textContent =
+    footerTopContent[selectedLanguage].emailLabel;
+  document.getElementById("email").textContent =
+    footerTopContent[selectedLanguage].email;
+  document.getElementById("phone-label").textContent =
+    footerTopContent[selectedLanguage].phoneLabel;
+  document.getElementById("phone").textContent =
+    footerTopContent[selectedLanguage].phone;
+
+  // Footer Bottom Section
+  document.getElementById("descriptionfooter").textContent =
+    footerBottomContent[selectedLanguage].descriptionFooter;
+    
+  // Update Company and Legal Headings
+  document.querySelector(".company-links h4").textContent =
+    footerBottomContent[selectedLanguage].companyHeading;
+  document.querySelector(".legal-links h4").textContent =
+    footerBottomContent[selectedLanguage].legalHeading;
+
+  // Update  Footer Bottom Company Links
+  const companyLinks = document.querySelectorAll(".company-links ul li a");
+  footerBottomContent[selectedLanguage].companyLinks.forEach((text, index) => {
+    companyLinks[index].textContent = text;
+  });
+
+  // Update  Footer Bottom Legal Links
+  const legalLinks = document.querySelectorAll(".legal-links ul li a");
+  footerBottomContent[selectedLanguage].legalLinks.forEach((text, index) => {
+    legalLinks[index].textContent = text;
+  });
 
   // Update text direction for Arabic
   document.body.style.direction = selectedLanguage === "ar" ? "rtl" : "ltr";
