@@ -198,6 +198,51 @@ select:hover ~ .select-icon {
   list-style: none;
   gap: 20px;
 }
+.navbar-container .nav-links .linksList .dropdown {
+  position: relative;
+
+}
+.navbar-container .nav-links .linksList .dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 20px 30px;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 150px;
+}
+.navbar-container .nav-links .linksList .dropdown .dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.navbar-container .nav-links .linksList .dropdown .dropdown-menu li {
+  list-style: none;
+  text-align: center;
+  padding: 5px 0;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 16px;
+}
+.navbar-container .nav-links .linksList .dropdown .dropdown-menu li:hover {
+  background: #ed1c24;
+  color: white;
+}
+/* Show Dropdown Menu on Hover */
+.navbar-container .nav-links .linksList .dropdown:hover .dropdown-menu {
+  display: flex;
+}
 .navbar-container .nav-links .linksList a {
   text-decoration: none;
   color: #000;
