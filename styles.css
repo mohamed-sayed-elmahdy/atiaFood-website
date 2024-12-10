@@ -377,6 +377,7 @@ select:hover ~ .select-icon {
 }
 .carousel .list .item .des {
   margin-top: 0.8rem;
+  max-width: 870px;
 }
 .carousel .list .item .buttons {
   display: grid;
@@ -716,9 +717,6 @@ select:hover ~ .select-icon {
 .about-section .about-content .about-button:hover i {
   color: white;
 }
-/* #about-btn-contact-us,
-#about-btn-learn-more {
-} */
 .about-section .aboutButton {
   background: #f44336;
   color: white;
@@ -738,9 +736,10 @@ select:hover ~ .select-icon {
   color: #ed1c24;
   font-weight: bold;
   margin-top: 1rem;
+  margin-left: 10px;
 }
 
-.text {
+.about-section .counter-container .text {
   font-size: 24px;
   color: #666;
   margin-left: 10px;
@@ -1052,7 +1051,7 @@ select:hover ~ .select-icon {
   position: relative;
   z-index: 2;
   color: white;
-  text-align: left;
+
   width: fit-content;
   top: 30%;
   transform: translateY(-50%);
@@ -1091,8 +1090,9 @@ select:hover ~ .select-icon {
 }
 
 #video-section #play-button span {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: white;
+  margin-right: -6px;
 }
 
 #video-section #play-button:hover {
@@ -1303,7 +1303,7 @@ select:hover ~ .select-icon {
 .footer-section .footer-bottom .logo-section .logo-container {
   max-width: 180px;
 }
-.footer-section .footer-bottom .logo-section #description {
+.footer-section .footer-bottom .logo-section #descriptionfooter {
   color: #ffffffca;
   max-width: 390px;
   font-size: 16px;
@@ -1499,6 +1499,7 @@ select:hover ~ .select-icon {
   }
   .carousel .list .item .buttons button {
     padding: 0px 15px;
+    margin-top: 3.8rem;
   }
   /* arrows */
   .arrows {
@@ -1525,11 +1526,24 @@ select:hover ~ .select-icon {
   }
   .about-section .about-content .about-button {
     padding: 7px 5px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .about-button i {
     margin: 0 8px;
     font-size: 18px;
+  }
+  .about-section .counter-container {
+    margin-top: 1.2rem;
+  }
+  .about-section .counter {
+    font-size: 35px;
+  }
+  .about-section .counter-container .text {
+    font-size: 19px;
+  }
+  .about-section .aboutButton {
+    padding: 10px 30px;
+    margin-top: 1rem;
   }
   /* Services Section */
   .services-section #services-title {
@@ -1557,6 +1571,50 @@ select:hover ~ .select-icon {
     font-weight: 600;
     text-align: center;
   }
+  .newnews .newsButton {
+    padding: 10px 30px;
+  }
+  .newnews i {
+    margin-left: 3px;
+  }
+  /* video section */
+  #video-section {
+    height: 69vh;
+  }
+  #video-section #content {
+    top: 35%;
+    padding: 0 15px;
+  }
+  #video-section #title {
+    font-size: 2.2rem;
+  }
+
+  #video-section #description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  /* experience-section */
+  .experience-section {
+    margin-top: 10px;
+    padding: 20px;
+  }
+  .experience-section .experience-container {
+    gap: 20px;
+    background-color: #ff0000;
+    padding: 20px 0px;
+  }
+  .experience-section .experience-container .experience-card {
+    padding: 10px;
+  }
+
+  .experience-section .experience-container .count {
+    font-size: 2.7rem;
+  }
+
+  .experience-section .experience-container p {
+    font-size: 1rem;
+  }
+
   /* footer section */
   .footer-section .footer-top {
     justify-content: center;
@@ -1566,7 +1624,7 @@ select:hover ~ .select-icon {
   .footer-section .footer-bottom {
     padding: 0 10px 10px;
   }
-  .footer-section .footer-bottom .logo-section #description {
+  .footer-section .footer-bottom .logo-section #descriptionfooter {
     font-size: 14px;
   }
   .footer-section .footer-bottom .logo-section .social-icons a {

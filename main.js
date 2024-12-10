@@ -1,4 +1,5 @@
 // Define text content for each language
+// Header, Navbar and carousel
 const content = {
   en: {
     navbar: {
@@ -47,6 +48,29 @@ const content = {
         link: "Read More",
       },
     },
+    carousel: [
+      {
+        title:
+          "Leadership in Food-Stuff & Consumer-Goods Distribution in Jordan",
+        description:
+          "Mohammad Hussein Atieh & partners Co. – General Trading; Hashemite Kingdom of Jordan, was founded by Mr. Mohammed Hussein Atieh in 1954 in the oldest, most famous wholesale foodstuff center of Amman downtown of Jordan.",
+        button: "Discover More",
+      },
+      {
+        title:
+          "Leadership in Food-Stuff & Consumer-Goods Distribution in Jordan",
+        description:
+          "Mohammad Hussein Atieh & partners Co. – General Trading; Hashemite Kingdom of Jordan, was founded by Mr. Mohammed Hussein Atieh in 1954 in the oldest, most famous wholesale foodstuff center of Amman downtown of Jordan.",
+        button: "Discover More",
+      },
+      {
+        title:
+          "Leadership in Food-Stuff & Consumer-Goods Distribution in Jordan",
+        description:
+          "Mohammad Hussein Atieh & partners Co. – General Trading; Hashemite Kingdom of Jordan, was founded by Mr. Mohammed Hussein Atieh in 1954 in the oldest, most famous wholesale foodstuff center of Amman downtown of Jordan.",
+        button: "Discover More",
+      },
+    ],
   },
   ar: {
     navbar: {
@@ -95,6 +119,181 @@ const content = {
         link: "اقرأ المزيد",
       },
     },
+    carousel: [
+      {
+        title: "الريادة في توزيع المواد الغذائية والسلع الاستهلاكية في الأردن",
+        description:
+          "شركة محمد حسين عطية وشركاه - التجارة العامة؛ المملكة الأردنية الهاشمية، أسسها السيد محمد حسين عطية عام 1954 في أقدم وأشهر مركز جملة للمواد الغذائية في وسط عمان.",
+        button: "اكتشف المزيد",
+      },
+      {
+        title: "الريادة في توزيع المواد الغذائية والسلع الاستهلاكية في الأردن",
+        description:
+          "شركة محمد حسين عطية وشركاه - التجارة العامة؛ المملكة الأردنية الهاشمية، أسسها السيد محمد حسين عطية عام 1954 في أقدم وأشهر مركز جملة للمواد الغذائية في وسط عمان.",
+        button: "اكتشف المزيد",
+      },
+      {
+        title: "الريادة في توزيع المواد الغذائية والسلع الاستهلاكية في الأردن",
+        description:
+          "شركة محمد حسين عطية وشركاه - التجارة العامة؛ المملكة الأردنية الهاشمية، أسسها السيد محمد حسين عطية عام 1954 في أقدم وأشهر مركز جملة للمواد الغذائية في وسط عمان.",
+        button: "اكتشف المزيد",
+      },
+    ],
+  },
+};
+// About Content
+const aboutContent = {
+  en: {
+    title: "About Mohammad Hussein Atieh & partners Co.",
+    description1:
+      "The company became one of the leading companies of Jordan wholesale-market. Since 1954, the company achieved successive progress in the area of trading. The second generation of sons completed the march to develop the company and strengthen its role in the Jordanian market and the national economy. The management is now driving the operations to cope with recent scientific & technological developments.",
+    description2:
+      "For the time-being, it represents a large number of international and regional agencies and brands by distributing their products in the Jordanian market through modern distribution systems.",
+    buttonLearnMore: "Quality Services",
+    buttonContactUs: "Innovation Ideas",
+    readMore: "Read More",
+    yearsExperience: "Years Of Experience",
+  },
+  ar: {
+    title: "عن شركة محمد حسين عطيه وشركاه",
+    description1:
+      "أصبحت الشركة واحدة من الشركات الرائدة في سوق الجملة في الأردن. منذ عام 1954، حققت الشركة تقدمًا متتاليًا في مجال التجارة. أكمل الجيل الثاني من الأبناء المسيرة لتطوير الشركة وتعزيز دورها في السوق الأردني والاقتصاد الوطني. الآن تدير الإدارة العمليات لمواكبة التطورات العلمية والتكنولوجية الحديثة.",
+    description2:
+      "في الوقت الحالي، تمثل عددًا كبيرًا من الوكالات والعلامات التجارية الدولية والإقليمية من خلال توزيع منتجاتها في السوق الأردني باستخدام أنظمة توزيع حديثة.",
+    buttonLearnMore: "خدمات عالية الجودة",
+    buttonContactUs: "أفكار مبتكرة",
+    readMore: "اقرأ المزيد",
+    yearsExperience: "سنوات من الخبرة",
+  },
+};
+// news Content
+const newsContent = {
+  en: {
+    title: "News and Events",
+    description:
+      "We are the largest wholesale food trading and delivery network in Jordan",
+    readMoreButton: "Read More",
+    cards: [
+      {
+        date: "January 02, 2022",
+        badge: "Events",
+        description:
+          "We are the largest wholesale food trading and delivery network in Jordan",
+        buttonText: "Read More",
+      },
+      {
+        date: "January 02, 2022",
+        badge: "Events",
+        description:
+          "We are the largest wholesale food trading and delivery network in Jordan",
+        buttonText: "Read More",
+      },
+      {
+        date: "January 02, 2022",
+        badge: "Events",
+        description:
+          "We are the largest wholesale food trading and delivery network in Jordan",
+        buttonText: "Read More",
+      },
+      {
+        date: "January 02, 2022",
+        badge: "Events",
+        description:
+          "We are the largest wholesale food trading and delivery network in Jordan",
+        buttonText: "Read More",
+      },
+      {
+        date: "January 02, 2022",
+        badge: "Events",
+        description:
+          "We are the largest wholesale food trading and delivery network in Jordan",
+        buttonText: "Read More",
+      },
+      {
+        date: "January 02, 2022",
+        badge: "Events",
+        description:
+          "We are the largest wholesale food trading and delivery network in Jordan",
+        buttonText: "Read More",
+      },
+      // Add other cards here
+    ],
+  },
+  ar: {
+    title: "الأخبار والفعاليات",
+    description: "نحن أكبر شبكة تجارة وتوصيل أغذية بالجملة في الأردن",
+    readMoreButton: "اقرأ المزيد",
+    cards: [
+      {
+        date: "02 يناير 2022",
+        badge: "فعاليات",
+        description: "نحن أكبر شبكة تجارة وتوصيل أغذية بالجملة في الأردن",
+        buttonText: "اقرأ المزيد",
+      },
+      {
+        date: "02 يناير 2022",
+        badge: "فعاليات",
+        description: "نحن أكبر شبكة تجارة وتوصيل أغذية بالجملة في الأردن",
+        buttonText: "اقرأ المزيد",
+      },
+      {
+        date: "02 يناير 2022",
+        badge: "فعاليات",
+        description: "نحن أكبر شبكة تجارة وتوصيل أغذية بالجملة في الأردن",
+        buttonText: "اقرأ المزيد",
+      },
+      {
+        date: "02 يناير 2022",
+        badge: "فعاليات",
+        description: "نحن أكبر شبكة تجارة وتوصيل أغذية بالجملة في الأردن",
+        buttonText: "اقرأ المزيد",
+      },
+      {
+        date: "02 يناير 2022",
+        badge: "فعاليات",
+        description: "نحن أكبر شبكة تجارة وتوصيل أغذية بالجملة في الأردن",
+        buttonText: "اقرأ المزيد",
+      },
+      {
+        date: "02 يناير 2022",
+        badge: "فعاليات",
+        description: "نحن أكبر شبكة تجارة وتوصيل أغذية بالجملة في الأردن",
+        buttonText: "اقرأ المزيد",
+      },
+      // Add other cards here
+    ],
+  },
+};
+
+// Video Section Content
+const videoSectionContent = {
+  en: {
+    title: "Explore MHA",
+    description:
+      "Selection of high-quality items and provision of the highest level of customer service through accessing all market outlets available.",
+    playButton: "▶",
+  },
+  ar: {
+    title: "استكشف MHA",
+    description:
+      "اختيار العناصر عالية الجودة وتوفير أعلى مستوى من خدمة العملاء من خلال الوصول إلى جميع المنافذ المتاحة.",
+    playButton: "▶",
+  },
+};
+
+// Experience Section Content
+const experienceSectionContent = {
+  en: {
+    card1: "Years Of Experience",
+    card2: "Years Of Experience",
+    card3: "Years Of Experience",
+    card4: "Years Of Experience",
+  },
+  ar: {
+    card1: "سنوات من الخبرة",
+    card2: "سنوات من الخبرة",
+    card3: "سنوات من الخبرة",
+    card4: "سنوات من الخبرة",
   },
 };
 
@@ -171,8 +370,89 @@ document.getElementById("language").addEventListener("change", (event) => {
     content[selectedLanguage].servicesCards.market.description;
   marketLink.textContent = content[selectedLanguage].servicesCards.market.link;
 
+  // Update carousel content
+  content[selectedLanguage].carousel.forEach((item, index) => {
+    document.getElementById(`carousel-title-${index + 1}`).textContent =
+      item.title;
+    document.getElementById(`carousel-description-${index + 1}`).textContent =
+      item.description;
+    document.getElementById(`carousel-button-${index + 1}`).textContent =
+      item.button;
+  });
+  // Update About Section Content
+  document.getElementById("about-title").textContent =
+    aboutContent[selectedLanguage].title;
+  document.getElementById("about-description").textContent =
+    aboutContent[selectedLanguage].description1;
+  document.getElementById("about-description2").textContent =
+    aboutContent[selectedLanguage].description2;
+  document.getElementById("btn-learn-more").textContent =
+    aboutContent[selectedLanguage].buttonLearnMore;
+  document.getElementById("btn-contact-us").textContent =
+    aboutContent[selectedLanguage].buttonContactUs;
+  document.getElementById("counter").nextElementSibling.textContent =
+    aboutContent[selectedLanguage].yearsExperience;
+  document.querySelector(".aboutButton").textContent =
+    aboutContent[selectedLanguage].readMore;
+
+  // Update News Section Content
+  document.getElementById("news-title").textContent =
+    newsContent[selectedLanguage].title;
+  document.getElementById("news-description").textContent =
+    newsContent[selectedLanguage].description;
+  document.querySelector(".newsButton").textContent =
+    newsContent[selectedLanguage].readMoreButton;
+
+  // Update Cards
+  const cardItems = document.querySelectorAll(".card-item");
+  newsContent[selectedLanguage].cards.forEach((card, index) => {
+    if (cardItems[index]) {
+      cardItems[index].querySelector(
+        ".date"
+      ).innerHTML = `<i class="fa-regular fa-calendar"></i> ${card.date}`;
+      cardItems[index].querySelector(".badge").textContent = card.badge;
+      cardItems[index].querySelector(".desc").textContent = card.description;
+      cardItems[index].querySelector("button").textContent = card.buttonText;
+    }
+  });
+
+  // Video Section
+  document.getElementById("title").textContent =
+    videoSectionContent[selectedLanguage].title;
+  document.getElementById("description").textContent =
+    videoSectionContent[selectedLanguage].description;
+  document.querySelector("#play-button span").textContent =
+    videoSectionContent[selectedLanguage].playButton;
+
+  // Experience Section
+  for (let i = 1; i <= 4; i++) {
+    document.getElementById(`card${i}`).querySelector("p").textContent =
+      experienceSectionContent[selectedLanguage][`card${i}`];
+  }
+
   // Update text direction for Arabic
   document.body.style.direction = selectedLanguage === "ar" ? "rtl" : "ltr";
+  const textContainerLi = document.querySelectorAll(
+    ".newnews .card-list.swiper-wrapper .card-item  .text-Container"
+  );
+  const dateContainerLi = document.querySelectorAll(
+    ".newnews .card-list.swiper-wrapper .card-item  .text-Container .date"
+  );
+  const badgeContainerLi = document.querySelectorAll(
+    ".newnews .card-list.swiper-wrapper .card-item  .text-Container .badge"
+  );
+  const descContainerLi = document.querySelectorAll(
+    ".newnews .card-list.swiper-wrapper .card-item  .text-Container .desc"
+  );
+
+  for (let i = 0; i < textContainerLi.length; i++) {
+    dateContainerLi[i].style.direction =
+      selectedLanguage === "ar" ? "rtl" : "ltr";
+    badgeContainerLi[i].style.direction =
+      selectedLanguage === "ar" ? "rtl" : "ltr";
+    descContainerLi[i].style.direction =
+      selectedLanguage === "ar" ? "rtl" : "ltr";
+  }
 });
 
 // Toggle NavLinks
