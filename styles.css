@@ -1512,12 +1512,16 @@ select:hover ~ .select-icon {
   }
   .navbar-container .contactButtonAndSearch button {
     margin-top: 10px;
+    color: #000;
+    font-weight: 400;
+    padding: 6px 24px;
   }
   .navbar-container .Right-Section .menu-toggle {
     display: block;
   }
   .navbar-container .nav-links .close-menu {
     display: flex;
+    color: #000;
   }
   .navbar-container .Right-Section a button {
     display: none;
