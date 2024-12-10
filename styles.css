@@ -6,6 +6,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: asul, sans-serif;
+ 
 }
 
 /* Header */
@@ -180,6 +181,7 @@ select:hover ~ .select-icon {
   margin: 0 auto;
   height: 70px;
   background: white;
+  
 }
 
 .navbar-container .logo-section {
@@ -197,6 +199,7 @@ select:hover ~ .select-icon {
   display: flex;
   list-style: none;
   gap: 20px;
+  
 }
 .navbar-container .nav-links .linksList a {
   text-decoration: none;
@@ -1415,7 +1418,7 @@ select:hover ~ .select-icon {
     background-color: #fff;
     position: absolute;
     top: 130px;
-    right: 50%;
+    right: -40%;
     transform: translate(50%);
     border: 1px solid #000000;
     max-width: 350px;
@@ -1426,6 +1429,8 @@ select:hover ~ .select-icon {
     border-radius: 25px;
     z-index: 300;
     gap: 0;
+    transition: 0.3s all;
+ 
   }
   .navbar-container .nav-links .linksList.show {
     display: flex;
@@ -1437,7 +1442,12 @@ select:hover ~ .select-icon {
     transform: translate(0%);
     border-radius: 0;
     border: none;
-    /* background: ; */
+    background: rgba(255, 255, 255, 0.15); 
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
   }
   .navbar-container .nav-links .linksList.show li {
     width: 100%;
@@ -1445,12 +1455,15 @@ select:hover ~ .select-icon {
     text-align: center;
     padding: 13px 0px;
   }
+  .navbar-container .nav-links .linksList a {
+   
+  }
   .navbar-container .nav-links .linksList.show li:hover {
     background: rgba(202, 202, 202, 0.721);
   }
   .navbar-container .contactButtonAndSearch button {
-margin-top: 10px;
-}
+    margin-top: 10px;
+  }
   .navbar-container .Right-Section .menu-toggle {
     display: block;
   }
