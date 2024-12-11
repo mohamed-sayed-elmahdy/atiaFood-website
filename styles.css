@@ -1612,12 +1612,11 @@ select:hover ~ .select-icon {
   }
   .carousel .list .item .des {
     margin-top: 0.7rem;
-    font-size: 14px;
+    font-size: 13px;
   }
   .carousel .list .item .buttons {
     margin-top: 0px;
     grid-template-rows: 50px;
-
   }
   .carousel .list .item .buttons button {
     padding: 0px 15px;
