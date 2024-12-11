@@ -1458,6 +1458,7 @@ select:hover ~ .select-icon {
     font-size: 19px;
     border: none;
     margin-right: -0.5px;
+    margin-left: 0;
   }
   .header .contact .email i {
     font-size: 21px;
@@ -1486,12 +1487,15 @@ select:hover ~ .select-icon {
   .contact {
     gap: 5px;
   }
-  .header .social .social-icon {
-    margin-left: 11px;
+  .header .social {
+    margin: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
   .header .social .social-icon i {
     font-size: 21px;
-    margin-right: 3px;
   }
   #language-label,
   .controls .social #follow-text {
