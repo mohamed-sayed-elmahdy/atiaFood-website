@@ -1456,15 +1456,15 @@ select:hover ~ .select-icon {
     gap: 5px;
   }
   .header .contact .phoneNumbersConatiner {
-    gap: 0;
+    gap: 7px;
   }
   .header .contact .phoneNumbersConatiner i {
-    font-size: 14px;
+    font-size: 19px;
     border: none;
     margin-right: -0.5px;
   }
   .header .contact .email i {
-    font-size: 16px;
+    font-size: 21px;
     border: none;
   }
   .header .controls {
@@ -1489,6 +1489,15 @@ select:hover ~ .select-icon {
   .contact {
     gap: 5px;
   }
+  .header .social .social-icon {
+    margin-left: 11px;
+    
+  }
+  .header .social .social-icon i{
+    font-size: 21px;
+    margin-right: 3px;
+
+}
   #language-label,
   .controls .social #follow-text {
     display: none;
