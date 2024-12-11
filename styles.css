@@ -362,7 +362,7 @@ select:hover ~ .select-icon {
 
 /* carousel */
 .carousel {
-  height: 100vh;
+  height: 88vh;
   overflow: hidden;
   position: relative;
 }
@@ -678,9 +678,6 @@ select:hover ~ .select-icon {
 @media screen and (max-width: 678px) {
   .carousel .list .item .content {
     padding-right: 0;
-  }
-  .carousel .list .item .content .title {
-    font-size: 30px;
   }
 }
 
@@ -1404,6 +1401,22 @@ select:hover ~ .select-icon {
   font-size: 14px;
   color: #bbb;
 }
+
+@media (max-width: 1024px) {
+  .carousel .list .item .title {
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1em;
+    max-width: 900px;
+}
+.carousel .list .item .buttons {
+  grid-template-rows: 56px;
+
+}
+.carousel .list .item .buttons button{
+  margin-top: 1rem;
+}
+}
 /* Responsive Design */
 @media (max-width: 868px) {
   .header {
@@ -1423,7 +1436,7 @@ select:hover ~ .select-icon {
 @media (max-width: 768px) {
   /* Header */
   .header {
-    padding: 5px 5px;
+    padding: 5px 8px;
     row-gap: 5px;
     column-gap: 10px;
     justify-content: flex-start;
@@ -1442,21 +1455,29 @@ select:hover ~ .select-icon {
   .controls {
     gap: 5px;
   }
+  .header .contact .phoneNumbersConatiner {
+    gap: 0;
+  }
   .header .contact .phoneNumbersConatiner i {
-    font-size: 12px;
+    font-size: 14px;
+    border: none;
+    margin-right: -0.5px;
+  }
+  .header .contact .email i {
+    font-size: 16px;
+    border: none;
   }
   .header .controls {
     flex-direction: row-reverse;
     justify-content: space-between;
     flex: 1;
-    margin-left: -1rem;
   }
   #language-label,
   .controls .social #follow-text {
     display: none;
   }
   .header .contact {
-    gap: 8px;
+    gap: 0px;
   }
   .header .contact .phone,
   .header .contact .email {
@@ -1576,18 +1597,18 @@ select:hover ~ .select-icon {
 
   /* carousel */
   .carousel {
-    height: 70vh;
+    height: 40vh;
   }
   .carousel .corner-image1,
   .carousel .corner-image2 {
-    width: 55px;
+    width: 47px;
   }
   .carousel .list .item .content {
     top: 10%;
   }
   .carousel .list .item .title {
-    font-size: 1.8rem;
-    line-height: 1em;
+    font-size: 1.3rem;
+    line-height: 0.9em;
   }
   .carousel .list .item .des {
     margin-top: 0.7rem;
@@ -1595,10 +1616,12 @@ select:hover ~ .select-icon {
   }
   .carousel .list .item .buttons {
     margin-top: 0px;
+    grid-template-rows: 50px;
+
   }
   .carousel .list .item .buttons button {
     padding: 0px 15px;
-    margin-top: 3.8rem;
+    margin-top: 0.8rem;
   }
   /* arrows */
   .arrows {
@@ -1745,14 +1768,10 @@ select:hover ~ .select-icon {
   .carousel .list .item .content {
     padding-right: 0;
   }
-  .carousel .list .item .content .title {
-    font-size: 30px;
-  }
 }
 @media (max-width: 585px) {
   .header .contact,
   .header .controls {
-    justify-content: space-around;
     padding: 0px;
   }
   /* Navbar */
