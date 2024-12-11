@@ -663,9 +663,7 @@ select:hover ~ .select-icon {
   animation: contentOut 1.5s linear 1 forwards !important;
 }
 .header .controls .language-switch .custom-select {
-
   width: 130px;
-
 }
 
 @keyframes contentOut {
@@ -1408,14 +1406,13 @@ select:hover ~ .select-icon {
     font-weight: bold;
     line-height: 1em;
     max-width: 900px;
-}
-.carousel .list .item .buttons {
-  grid-template-rows: 56px;
-
-}
-.carousel .list .item .buttons button{
-  margin-top: 1rem;
-}
+  }
+  .carousel .list .item .buttons {
+    grid-template-rows: 56px;
+  }
+  .carousel .list .item .buttons button {
+    margin-top: 1rem;
+  }
 }
 /* Responsive Design */
 @media (max-width: 868px) {
@@ -1445,7 +1442,6 @@ select:hover ~ .select-icon {
 
   .header .contact {
     gap: 8px;
-    
   }
   .header .contact .phone,
   .header .contact .email {
@@ -1483,7 +1479,8 @@ select:hover ~ .select-icon {
   .header .contact .email {
     font-size: 12px;
   }
-  .header .contact .phone span,    .header .contact .email span{
+  .header .contact .phone span,
+  .header .contact .email span {
     display: none;
   }
   .contact {
@@ -1491,13 +1488,11 @@ select:hover ~ .select-icon {
   }
   .header .social .social-icon {
     margin-left: 11px;
-    
   }
-  .header .social .social-icon i{
+  .header .social .social-icon i {
     font-size: 21px;
     margin-right: 3px;
-
-}
+  }
   #language-label,
   .controls .social #follow-text {
     display: none;
@@ -1545,7 +1540,6 @@ select:hover ~ .select-icon {
     border: 1px solid rgba(255, 255, 255, 0.3);
     justify-content: flex-start;
     padding-top: 7rem;
-    
   }
   .navbar-container .nav-links .linksList.show li {
     width: 100%;
@@ -1553,9 +1547,8 @@ select:hover ~ .select-icon {
     text-align: center;
     padding: 13px 0px;
     border-radius: 20px;
-    
   }
- 
+
   .navbar-container .nav-links .linksList.show li:hover {
     background: rgba(195, 202, 202, 0.109);
   }
@@ -1582,15 +1575,13 @@ select:hover ~ .select-icon {
     transform: none;
     position: initial;
     width: 134px;
-  
+
     margin: 0.1rem auto 0;
     overflow: hidden;
     transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
     background: transparent;
     border: none;
     box-shadow: none;
-
-
   }
   .navbar-container
     .nav-links
@@ -1598,10 +1589,10 @@ select:hover ~ .select-icon {
     .dropdown
     .dropdown:hover
     .dropdown-menu {
-      max-height: 300px; 
-      opacity: 1;
-      visibility: visible; 
-      margin-top: 6px;
+    max-height: 300px;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 6px;
   }
 
   /* carousel */
@@ -1617,7 +1608,7 @@ select:hover ~ .select-icon {
   }
   .carousel .list .item .title {
     font-size: 1.3rem;
-    line-height: 0.9em;
+    line-height: 1.3em;
   }
   .carousel .list .item .des {
     margin-top: 0.7rem;
