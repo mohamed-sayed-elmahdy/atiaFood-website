@@ -12,16 +12,21 @@ const content = {
       searchPlaceholder: "Search...",
     },
     contact: `
-      <div class="phoneNumbersConatiner">
-        <i class="fas fa-phone"></i>
-        <div class="phoneNumbers" style="direction: ltr !important;">
-          <a href="tel:+96264886564" class="phone" style="direction: ltr !important;"> +962 6 4886564 </a>
-          <a href="tel:+96264886560" class="phone" style="direction: ltr !important;"> +962 6 4886560 </a>
+        <div class="phoneNumbersConatiner">
+          <i class="fas fa-phone"></i>
+          <div class="phoneNumbers" style="direction: ltr !important">
+            <a
+              href="tel:+96264886564"
+              class="phone"
+              style="direction: ltr !important"
+            >
+             <span> +962 6 4886564</span>
+            </a>
+          </div>
         </div>
-      </div>
-      <a href="mailto:info@atiehfood.com" class="email">
-        <i class="fas fa-envelope"></i> <span>info@atiehfood.com</span>
-      </a>
+        <a href="mailto:info@atiehfood.com" class="email">
+          <i class="fas fa-envelope"></i> <span>info@atiehfood.com</span>
+        </a>
     `,
     followText: "Follow us:",
     languageLabel: "Language:",
@@ -83,16 +88,21 @@ const content = {
       searchPlaceholder: "بحث...",
     },
     contact: `
-      <div class="phoneNumbersConatiner">
-        <i class="fas fa-phone"></i>
-        <div class="phoneNumbers" style="direction: ltr !important;">
-          <a href="tel:+96264886564" class="phone" style="direction: ltr !important;"> +962 6 4886564 </a>
-          <a href="tel:+96264886560" class="phone" style="direction: ltr !important;"> +962 6 4886560 </a>
+        <div class="phoneNumbersConatiner">
+          <i class="fas fa-phone"></i>
+          <div class="phoneNumbers" style="direction: ltr !important">
+            <a
+              href="tel:+96264886564"
+              class="phone"
+              style="direction: ltr !important"
+            >
+             <span> +962 6 4886564</span>
+            </a>
+          </div>
         </div>
-      </div>
-      <a href="mailto:info@atiehfood.com" class="email">
-        <i class="fas fa-envelope"></i> <span>info@atiehfood.com</span>
-      </a>
+        <a href="mailto:info@atiehfood.com" class="email">
+          <i class="fas fa-envelope"></i> <span>info@atiehfood.com</span>
+        </a>
     `,
     followText: "تابعنا على: ",
     languageLabel: "اللغة:",

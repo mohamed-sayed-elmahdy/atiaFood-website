@@ -662,6 +662,11 @@ select:hover ~ .select-icon {
 .carousel.prev .list .item:nth-child(2) .content .buttons {
   animation: contentOut 1.5s linear 1 forwards !important;
 }
+.header .controls .language-switch .custom-select {
+
+  width: 130px;
+
+}
 
 @keyframes contentOut {
   to {
@@ -1411,6 +1416,9 @@ select:hover ~ .select-icon {
   .newnews .container.swiper .newBg1 {
     display: none;
   }
+  .navbar-container .nav-links {
+    font-size: 14px;
+  }
 }
 @media (max-width: 768px) {
   /* Header */
@@ -1418,10 +1426,13 @@ select:hover ~ .select-icon {
     padding: 5px 5px;
     row-gap: 5px;
     column-gap: 10px;
+    justify-content: flex-start;
+    column-gap: 0;
   }
 
   .header .contact {
     gap: 8px;
+    
   }
   .header .contact .phone,
   .header .contact .email {
@@ -1431,8 +1442,14 @@ select:hover ~ .select-icon {
   .controls {
     gap: 5px;
   }
+  .header .contact .phoneNumbersConatiner i {
+    font-size: 12px;
+  }
   .header .controls {
-    gap: 5px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex: 1;
+    margin-left: -1rem;
   }
   #language-label,
   .controls .social #follow-text {
@@ -1445,11 +1462,10 @@ select:hover ~ .select-icon {
   .header .contact .email {
     font-size: 12px;
   }
-  .contact,
-  .controls {
-    gap: 5px;
+  .header .contact .phone span,    .header .contact .email span{
+    display: none;
   }
-  .header .controls {
+  .contact {
     gap: 5px;
   }
   #language-label,
@@ -1459,6 +1475,9 @@ select:hover ~ .select-icon {
   /* Navbar */
   .navbar-container {
     height: 58px;
+  }
+  .navbar-container .nav-links {
+    font-size: 16px;
   }
   .navbar-container .nav-links .linksList {
     display: none;
